@@ -87,7 +87,7 @@ $_SESSION['total_amount'] = $_POST['amount'];
   curl_setopt($curl, CURLOPT_POST, true);
   curl_setopt($curl, CURLOPT_POSTFIELDS, $data_string);
   $curl_response = curl_exec($curl);
-
+/*
   if (curl_errno($curl)) {
     // Handle CURL error
     echo "<p style='color: red;'>Error: " . curl_error($curl) . "</p>";
@@ -118,7 +118,7 @@ $_SESSION['total_amount'] = $_POST['amount'];
         echo "<p>Response Description: " . htmlspecialchars($response['ResponseDescription']) . "</p>";
         echo "<p>Customer Message: " . htmlspecialchars($response['CustomerMessage']) . "</p>";
     }
-}
+} */
 curl_close($curl);
  // print_r($curl_response);
 
