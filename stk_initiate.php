@@ -46,7 +46,7 @@ $_SESSION['total_amount'] = $_POST['amount'];
   $initiate_url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
 
   # callback url
-  $CallBackURL = 'https://secret-plains-70423-283428ea4e96.herokuapp.com/callback_url.php';  
+  $CallBackURL = 'https://pumpkin-cobbler-19113-42c7880ba878.herokuapp.com/callback_url.php';  
 
   $curl = curl_init($access_token_url);
   curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
